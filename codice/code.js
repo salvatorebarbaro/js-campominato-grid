@@ -15,5 +15,14 @@ for(let i=0;i<49;i++)
     const newelement = document.createElement("div")
     newelement.classList.add("square");
     grid.append(newelement);
-    console.log(newelement)
+    
+
+    // inserisco un event lit
+    newelement.addEventListener("click",function()
+    {
+        // In JavaScript, la parola chiave this si riferisce a un oggetto.L'oggetto dipende dal modo in cui viene richiamato (utilizzato o chiamato).La parola chiave this si riferisce a oggetti diversi a seconda di come viene utilizzata:
+        this.classList.add("active");
+        // con la classe sopra riportata noi andiamo ad aggiungere la classe sctive all' elemento
+    }
+    );
 }
