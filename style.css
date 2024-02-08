@@ -37,3 +37,11 @@ body {
     background-color: #7fffd4;
     font-weight: bold;
 }
+.square.active.pari
+{
+    background-color: red;
+}
+.square.active.dispari
+{
+    background-color: yellow;
+}
