@@ -21,16 +21,29 @@ body {
 {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 20px;
+    overflow: auto;
+    width: 700px;
+    height: 700px;
 }
 .square
 {
-    width: 100px;
-    height: 100px;
     border: 1px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+}
+button
+{
+    padding: 5px;
+    color: white;
+    font-size: large ;
+    font-weight: bold;
+    background-color: rgba(149, 2, 2, 0.802);
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.594);
+    box-shadow: 10px 10px 10px black ;
 }
 /* indichiamo che tutti gli square con entrambe le classi avranno questi dettagli */
 .square.active {
@@ -44,4 +57,45 @@ body {
 .square.active.dispari
 {
     background-color: yellow;
+}
+.container_select
+{
+    display: flex;
+    gap: 20px;
+    max-width: 100px;
+    align-items: center;
+}
+label
+{
+    color: white;
+    font-size: large ;
+    font-weight: bold;
+    text-align: center;
+}
+.container_head
+{
+    display: flex;
+    gap: 12%;
+    justify-content: end;
+}
+select
+{
+    font-size: medium;
+    background-color: green;
+    color: sandybrown;
+}
+#grid.easy .square
+{
+   width:calc(100% / 10);
+   height: calc(100% / 10);
+}
+#grid.medium .square
+{
+   width:calc(100% / 9) ;
+   height: calc(100% / 9);
+}
+.square .difficult
+{
+   width:calc(100% / 7 ) ;
+   height: calc(100% / 7);
 }
