@@ -94,8 +94,10 @@ select
    width:calc(100% / 9) ;
    height: calc(100% / 9);
 }
-.square .difficult
+
+/* elemento che si "applicherà" solo quando avremo #grid.difficult "esistenti */
+#grid.difficult .square
 {
-   width:calc(100% / 7 ) ;
+   width: calc(100% / 7);
    height: calc(100% / 7);
 }

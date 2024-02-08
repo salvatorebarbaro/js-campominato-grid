@@ -84,9 +84,12 @@ function selezione_difficolta(newelement)
     }
     else
     {
+        grid.classList.remove("medio");
+        
         number=49;
-        grid.innerHTML="";
+        
         grid.classList.add("difficult");
+        
     }
     }
 
